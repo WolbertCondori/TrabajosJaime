@@ -2,10 +2,12 @@ package eje3;
 
 public abstract class DispositivoBase implements DispositivoCasa{
     String funcion;
+    boolean apagado;
+    boolean encendido;
 
-    public DispositivoBase() {
+    public DispositivoBase(String funcion) {
+        this.funcion = funcion;
     }
-
     public void setFuncion(String funcion) {
         this.funcion = funcion;
     }
